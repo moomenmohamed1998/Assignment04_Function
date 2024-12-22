@@ -53,6 +53,7 @@
 
         static void Main(string[] args)
         {
+
             #region  casting [Boxing - unBoxing]
             //object obj = new object();
             //obj = "mostafa";
@@ -208,6 +209,23 @@
 
 
             #endregion
+
+
+            #region Function - Passing By Out
+
+            //int A = 10;
+            //int B = 20;
+            //int sum, mul;
+            //Summul(A, B, out sum, out mul);
+
+            //Console.WriteLine(sum);
+            //Console.WriteLine(mul);
+
+
+
+
+            #endregion
+
 
 
         }
