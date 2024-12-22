@@ -13,6 +13,29 @@
             }
         }
 
+        public static int SumArray(int[] Arr)
+        {
+            int Sum = 0;
+            Arr[0] = 100;
+            for (int i = 0; i < Arr.Length; i++) 
+            {
+                Sum += Arr[i];
+
+            }
+            return Sum;
+        }
+
+
+        public static void swap(int x, int y)
+        {
+
+            int Temp = x;
+            x = y;
+            y = Temp;
+
+        }
+
+
         static void Main(string[] args)
         {
             #region  casting [Boxing - unBoxing]
@@ -107,10 +130,47 @@
 
             #region Function
 
-            printshape();
+            //printshape();
 
 
             #endregion
+
+            #region  Value Type Paramters
+
+            #region By Value
+
+            //int A = 5;
+            //int B = 9;
+            //Console.WriteLine(A);
+            //Console.WriteLine(B);
+            //swap(A, B);
+            //Console.WriteLine(A);
+            //Console.WriteLine(B);
+
+            #endregion
+
+            #region By Refrence
+
+            //int A = 5;
+            //int B = 9;
+            //Console.WriteLine(A);
+            //Console.WriteLine(B);
+            //swap(ref A,ref B);
+            //Console.WriteLine(A);
+            //Console.WriteLine(B);
+
+            #endregion
+
+            #endregion
+
+            #region Reference Type
+
+            //int[] Numbers = { 1, 2, 3 };
+            //Console.WriteLine(SumArray(Numbers));
+            //Console.WriteLine(Numbers[0]);
+
+            #endregion
+
 
         }
     }
