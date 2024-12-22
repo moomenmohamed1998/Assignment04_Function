@@ -4,6 +4,8 @@
     {
 
 
+      
+
 
         public static void printshape()
         {
@@ -13,10 +15,15 @@
             }
         }
 
-        public static int SumArray(int[] Arr)
+
+
+        public static int SumArray(ref int[] Arr)
         {
             int Sum = 0;
-            Arr[0] = 100;
+            //Arr[0] = 100;
+
+            Arr = new int[] { 4, 5, 6 };
+
             for (int i = 0; i < Arr.Length; i++) 
             {
                 Sum += Arr[i];
@@ -26,6 +33,14 @@
         }
 
 
+
+        public static void Summul(int x, int y, out int Sum, out int mul)
+        {
+
+             Sum = x + y;
+             mul = x * y;
+
+        }
         public static void swap(int x, int y)
         {
 
@@ -165,9 +180,32 @@
 
             #region Reference Type
 
+            #region EX01
+            //int[] Numbers = { 1, 2, 3 };
+            //Console.WriteLine(SumArray(Numbers));
+            //Console.WriteLine(Numbers[0]); 
+            #endregion
+
+            #region EX02
+
+            #region By value
             //int[] Numbers = { 1, 2, 3 };
             //Console.WriteLine(SumArray(Numbers));
             //Console.WriteLine(Numbers[0]);
+
+            #endregion
+
+            #region By Ref
+
+            //int[] Numbers = { 1, 2, 3 };
+            //Console.WriteLine(SumArray(ref Numbers));
+            //Console.WriteLine(Numbers[0]);
+
+            #endregion
+
+            #endregion
+
+
 
             #endregion
 
