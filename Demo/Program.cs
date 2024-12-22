@@ -2,13 +2,24 @@
 {
     internal class Program
     {
+
+
+
+        public static void printshape()
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine("(*-*)");
+            }
+        }
+
         static void Main(string[] args)
         {
             #region  casting [Boxing - unBoxing]
             //object obj = new object();
             //obj = "mostafa";
             //obj = 2;
-            
+
             #region Boxing [safe Code]
             //int x = 10;
             //object obj01 = new object();
@@ -93,6 +104,14 @@
             //Console.WriteLine(Length);
 
             #endregion
+
+            #region Function
+
+            printshape();
+
+
+            #endregion
+
         }
     }
 }
