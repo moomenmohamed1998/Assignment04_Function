@@ -210,7 +210,6 @@
 
             #endregion
 
-
             #region Function - Passing By Out
 
             //int A = 10;
@@ -226,7 +225,13 @@
 
             #endregion
 
+            #region function - Params
 
+            //int[] number = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+            //Console.WriteLine(SumArray(ref number));
+
+            #endregion
 
         }
     }
