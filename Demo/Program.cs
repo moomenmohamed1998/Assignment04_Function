@@ -3,10 +3,6 @@
     internal class Program
     {
 
-
-      
-
-
         public static void printshape()
         {
             for (int i = 0; i < 10; i++)
@@ -14,8 +10,6 @@
                 Console.WriteLine("(*-*)");
             }
         }
-
-
 
         public static int SumArray(ref int[] Arr)
         {
@@ -32,8 +26,6 @@
             return Sum;
         }
 
-
-
         public static void Summul(int x, int y, out int Sum, out int mul)
         {
 
@@ -41,6 +33,7 @@
              mul = x * y;
 
         }
+
         public static void swap(int x, int y)
         {
 
@@ -49,7 +42,6 @@
             y = Temp;
 
         }
-
 
         static void Main(string[] args)
         {
